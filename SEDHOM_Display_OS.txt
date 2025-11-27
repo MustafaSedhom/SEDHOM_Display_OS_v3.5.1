@@ -1,0 +1,87 @@
+//=======================================================================================================//
+// name     : Mustafa Shawky Sedhom Esawi Madian.
+// company  : SEDHOM.
+// Job      : Embedded Software & Hardware Engineer & Flutter Developer.
+// Email    : elmohandes24680@gmail.com.
+// country  : Egypt.
+// Phone    : +201144962908.
+// Born     : 22/02/2006.
+// languge  : Arabic.
+// gitHub   : https://github.com/MustafaSedhom
+// Linkedin : http://www.linkedin.com/in/mustafa-sedhom-bb2551322
+//=======================================================================================================//
+
+//=======================================================================================================//
+// project name            : SEDHOM Display OS Project
+//
+// last project version    : version v2.0.3
+//
+// updated project version : version v3.5.1
+//
+// updated project version : 27 / 11 / 2025
+//
+// what is updates do      : 1 => add widgets and handling some widgets tom make code size smallest.
+//
+//                           2 => and adding Stack Data structure in SEDHOM_Data_Structure folder 
+//                                you can use it in your project esally like Stack stack(20);
+//                                20 is elemnt in Stack beacuse it`s bulid by using array 
+//                                and defult Data Type is int if you want to change it include header
+//                                and define data type before including folder like :-
+//                                    #define STACK_DATA_TYPE  float //(input your data type here)
+//                                    #include "SEDHOM_Data_Structure/SEDHOM_OS_Data_Structure.h"
+//                                then you can use pop and push and peek and isempty and isfull
+//                                functions in stack .
+//
+//                           3 => and adding pages navigation depend on stack data structure I put it all 
+//                                functions in SEDHOM_Handling_pages folder you can use it directly in main code
+//                                dont include file i include it in SEDHOM_Display_OS.h include it and
+//                                you can use all functions in this folder like 
+//                                1-> push_page_with_number(int number);
+//                                2-> push_page(); or remove_page(); do some thing
+//                                2-> pop_page();  or add_page(); do some thing
+//                                3-> show_current_page(); 
+//                                I put example in example folder its name scrolling_bettwen_pages.cpp file
+//                                if you on Arduino IDE change extention of file to .ino instead of .cpp
+//                                this example take Flash: [==========]  99.8% (used 32190 bytes from 32256 bytes) 
+//                                100 % of flash code on arduino uno (atmega 328pu) Avr mcu 
+//                                if you dont like to use my example then follow me to explain how can use 
+//                                before main function or setup function put this line 
+//                                            list_of_pages = {page_1,page_2,page_3};
+//                                you can put any countity of you 
+//                                want from pages but i put maxmium 50 page in SEDHOM_Handling_pages.h you can change it 
+//                                you should make function named it any name you want and put name in curly practs 
+//                                by ref name only without () and in void setup or main befor while loop in main
+//                                put SEDHOM_OS_handlig_pages(); this function is amacro you can look it in orginal folder
+//                                this function draw first page utmatically  
+//                                and in loop or while loop in main make if condition to detect click on any button you want
+//                                then in if but add_page(); or remove_page();like you want.
+//                                you can make any countity of page how ? make function and nmaed it and put in function what 
+//                                you want draw in this page and in list_of_pages put your function name only without ()
+//                                or you can take pages I make it in SEDHOM_Screens_And_pages folder.
+//                              
+//
+// project descriptions    : this project draw widgets and icon and pages on tft sheild display 
+//                           for arduino and esp and stm mcu.
+//
+// How can you add SEDHOM OS in your project => 
+//    1 -> on arduino ide put SEDHOM_Display_OS folder in your project in same path main.ino file
+//         add in main file include lib by adding this line in your project
+//              #include "SEDHOM_Display_OS/SEDHOM_Display_OS.h" 
+//         and you can use all properties in SEDHOM OS.
+//         you shoud include some library in your projects like 
+//             A -> Mcufreind_kbv.
+//             B -> Adafruit GFX.
+//             C -> Adafruit BusIO.
+//             D -> Adafruit_TouchScreen.
+//
+//    2 -> on platformino in vscode put SEDHOM_Display_OS folder 
+//         in your project in same path main.cpp file
+//         in src folder add in main file include lib by adding this line in your project
+//              #include "SEDHOM_Display_OS/SEDHOM_Display_OS.h" 
+//         and you can use all properties in SEDHOM OS.
+//         you shoud include some library in your projects like in lib Folders
+//             A -> Mcufreind_kbv.
+//             B -> Adafruit GFX.
+//             C -> Adafruit BusIO.
+//             D -> Adafruit_TouchScreen.
+//=======================================================================================================// 
